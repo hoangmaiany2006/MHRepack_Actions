@@ -35,7 +35,7 @@ jobs:
       - name: Checkout WORKSPACE
         run: |
           
-          git clone https://${{ secrets.PRIVATEP_TOKEN }}@github.com/ndtai1527/Tiramisu-Cake.git
+          git clone https://${{ secrets.PRIVATEP_TOKEN }}@github.com/Hma1984/MiuiRepack_A13.git
 
       - name: Set up Time
         run: |
@@ -57,13 +57,13 @@ jobs:
           
       - name: Giving Premission
         run: |
-          cd Tiramisu-Cake
+          cd MiuiRepack_A13
           sudo chmod 777 -R *
 
       - name: Working...
         env:
           INPUT_URL: ${{ inputs.input_url }}
         run: |
-          cd Tiramisu-Cake
-          sudo bash polyxCN.sh "$INPUT_URL"
+          cd MiuiRepack_A13
+          sudo bash patchCN.sh "$INPUT_URL"
       
