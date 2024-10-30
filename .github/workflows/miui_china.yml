@@ -8,7 +8,7 @@ on:
         required: true
 
 jobs:
-  PolyxUI_Status:
+  MIUIRepack_Status:
     runs-on: ubuntu-latest
     steps:
       - name: Clean All Junk,App
