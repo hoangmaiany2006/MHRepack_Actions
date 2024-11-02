@@ -35,7 +35,7 @@ jobs:
       - name: Checkout WORKSPACE
         run: |
           
-          git clone https://${{ secrets.PRIVATEP_TOKEN }}@github.com/Hma1984/MiuiRepack_A13.git
+          git clone https://${{ secrets.PRIVATEP_TOKEN }}@github.com/Hma1984/MIHyperA13.git
 
       - name: Set up Time
         run: |
@@ -57,13 +57,13 @@ jobs:
           
       - name: Giving Premission
         run: |
-          cd MiuiRepack_A13
+          cd MIHyperA13
           sudo chmod 777 -R *
 
       - name: Working...
         env:
           INPUT_URL: ${{ inputs.input_url }}
         run: |
-          cd MiuiRepack_A13
-          sudo bash patchCN.sh "$INPUT_URL"
+          cd MIHyperA13
+          sudo bash startCN.sh "$INPUT_URL"
       
