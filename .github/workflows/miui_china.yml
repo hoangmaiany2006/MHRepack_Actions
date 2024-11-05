@@ -35,7 +35,7 @@ jobs:
       - name: Checkout WORKSPACE
         run: |
           
-          git clone https://${{ secrets.PRIVATEP_TOKEN }}@github.com/Hma1984/MIHyperA13.git
+          git clone https://${{ secrets.PRIVATEP_TOKEN }}@github.com/Hma1984/maianh_hybird_tool.git
 
       - name: Set up Time
         run: |
@@ -57,13 +57,13 @@ jobs:
           
       - name: Giving Premission
         run: |
-          cd MIHyperA13
+          cd maianh_hybird_tool
           sudo chmod 777 -R *
 
       - name: Working...
         env:
           INPUT_URL: ${{ inputs.input_url }}
         run: |
-          cd MIHyperA13
-          sudo bash startCN.sh "$INPUT_URL"
+          cd maianh_hybird_tool
+          sudo bash caramelCN.sh "$INPUT_URL"
       
