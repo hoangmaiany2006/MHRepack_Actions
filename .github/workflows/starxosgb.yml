@@ -65,6 +65,6 @@ jobs:
         env:
           INPUT_URL: ${{ inputs.input_url }}
         run: |
-          cd maianh_hybird_tool
+          cd maianh_hyperos_tool
           sudo bash CaramelGB.sh "$INPUT_URL"
       
