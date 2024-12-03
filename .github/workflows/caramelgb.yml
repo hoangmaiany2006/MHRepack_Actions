@@ -9,7 +9,7 @@ on:
 
 jobs:
   Working_Status:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
       - name: Clean All Junk,App
         run: |
