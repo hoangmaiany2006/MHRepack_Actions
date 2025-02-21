@@ -1,5 +1,5 @@
 
-name: StarXUI/OS China
+name: OneUI-A Build
 
 on:
   workflow_dispatch:
