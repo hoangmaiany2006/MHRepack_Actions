@@ -5,7 +5,13 @@ on:
   workflow_dispatch:
     inputs:
       model:
-        description: 'Model To Build'
+        description: 'Your Devices Model :'
+        required: true
+      region:
+        description: 'Your Devices Region/Carrier:'
+        required: true
+      imei:
+        description: 'Your Devices IMEI:'
         required: true
 
 jobs:
@@ -67,7 +73,9 @@ jobs:
       - name: Working...
         env:
           MODEL: ${{ inputs.model }}
+          REGION: ${{ inputs.region }}
+          IMEI: ${{ inputs.imei }}
         run: |
           cd oneui-a_autobuild
-          sudo bash build.sh "$MODEL"
+          sudo bash build.sh -m "$MODEL" -r "$REGION" -i "$IMEI"
       
