@@ -1,4 +1,4 @@
-name: MIUI/HyperNT Action
+name: MIUI/HyperNT China
 
 on:
   workflow_dispatch:
