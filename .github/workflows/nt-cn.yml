@@ -1,4 +1,4 @@
-name: StarXUI/OS China
+name: MIUI/HyperNT Action
 
 on:
   workflow_dispatch:
