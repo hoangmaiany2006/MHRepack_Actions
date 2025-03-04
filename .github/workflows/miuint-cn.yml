@@ -1,4 +1,4 @@
-name: MIUI 13-14 A12 CN
+name: MIUINT13-14 A12 CN
 
 on:
   workflow_dispatch:
