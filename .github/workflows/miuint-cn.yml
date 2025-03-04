@@ -1,4 +1,4 @@
-name: StarXUI/OS Beta China
+name: MIUI 13-14 A12 CN
 
 on:
   workflow_dispatch:
