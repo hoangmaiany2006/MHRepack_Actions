@@ -58,13 +58,13 @@ jobs:
           
       - name: Giving Premission
         run: |
-          cd maianh_hyperos_tool
+          cd miuia12_hybird_tool
           sudo chmod 777 -R *
 
       - name: Working...
         env:
           INPUT_URL: ${{ inputs.input_url }}
         run: |
-          cd maianh_hyperos_tool
+          cd miuia12_hybird_tool
           sudo bash caramelCN.sh "$INPUT_URL"
       
